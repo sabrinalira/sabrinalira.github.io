@@ -1,0 +1,316 @@
+// Custom.scss
+// https://getbootstrap.com/docs/5.0/customize/sass/
+
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "~bootstrap/scss/functions";
+
+
+// 2. Include any default variable overrides here
+
+// $primary-background: #FFFFFF;
+// $secondary-background: #F7F7F7;
+// $tertiary-background: #365B6D;
+
+// $primary-font: #000000;
+// $secondary-font: #F7F7F7;
+// $tertiary-font: #365B6D;
+// $inverted-font: #FFFFFF;
+
+// bootstrap overrides 
+$primary: #365B6D;
+$secondary: #F7F7F7;
+$light: #FFFFFF;
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+$font-family-sans-serif: -apple-system, 'Barlow', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$card-border-radius: 15px;
+
+
+
+// font 
+// Title
+// font-family: Barlow;
+// font-style: normal;
+// font-weight: bold;
+// font-size: 64px;
+// line-height: 77px;
+
+// Heading1
+// font-family: Barlow;
+// font-style: normal;
+// font-weight: bold;
+// font-size: 50px;
+// line-height: 60px;
+
+// Heading2
+// font-family: Barlow;
+// font-style: normal;
+// font-weight: normal;
+// font-size: 24px;
+// line-height: 29px;
+
+// Lead Text
+// font-family: Barlow;
+// font-style: normal;
+// font-weight: normal;
+// font-size: 18px;
+// line-height: 22px;
+
+// Normal
+// font-family: Barlow;
+// font-style: normal;
+// font-weight: normal;
+// font-size: 15px;
+// line-height: 18px;
+
+
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/utilities";
+
+
+// Layout & components (optional Bootstrap components)
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/accordion";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/toasts";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/spinners";
+@import "~bootstrap/scss/offcanvas";
+// Helpers
+@import "~bootstrap/scss/helpers";
+// Utilities
+@import "~bootstrap/scss/utilities/api";
+
+
+// 5. Add additional custom code here
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon-style {
+  font-family: $font-family-sans-serif;
+  color: $primary;
+}
+
+
+.card-work {
+  transition: box-shadow .3s;
+}
+
+.card-work:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+.card-image {
+  transition: all .3s;
+  border-radius: $card-border-radius;
+  box-shadow: 1rem 1rem $primary;
+}
+
+.card-image:hover {
+  transform: translate(-0.5rem, -0.5rem);
+  box-shadow: 2rem 2rem $primary;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* Vertical line between timeline items */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px;
+  bottom: 0;
+  width: 2px;
+  background-color: #e0e0e0;
+}
+
+.timeline-icon {
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid #e0e0e0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  position: relative;
+}
+
+.timeline-content {
+  margin-left: 60px;
+}
+
+.page-container {
+  padding-left: 85px; /* Default padding for larger screens */
+  padding-right: 85px; /* Default padding for larger screens */
+}
+
+/* Adjust padding for smaller screens */
+@media (max-width: 768px) {
+  .page-container {
+    padding-left: 20px; /* Reduced padding on smaller screens */
+    padding-right: 20px; /* Reduced padding on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .page-container {
+    padding-left: 15px; /* Even less padding on very small screens */
+    padding-right: 15px; /* Even less padding on very small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .my-center {
+    text-align: center;
+  }
+}
+
+
+ul {
+  // list-style: none;
+  // padding: 0;
+  padding-left: 15px;
+  list-style-position: outside;
+}
+
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  color: $primary; /* Same as the text color in your screenshot */
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-right: 20px;
+  transition: color 0.2s ease-in-out;
+}
+
+
+.icon {
+  margin-right: 8px;
+}
+
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+  z-index: 1000; /* Ensures the navbar stays above other elements */
+}
+
+html {
+  scroll-padding-top: 55px; /* Adjust this value based on your navbar height */
+}
+
+// .skills-grid {
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr); /* 4 columns */
+//   gap: 10px; /* Space between items */
+// }
+
+.skills-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  // display: contents; /* So it uses grid space correctly */
+}
+
+.skill-item {
+  padding: 0.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.icon-style {
+  color: $primary;  /* Set icon color to red */
+  //font color black
+  
+  // font-size: 2rem; /* Adjust size as needed */
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skills-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .skill-item {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .publication-links {
+    justify-content: center;
+  }
+  .col-lg-3 {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .publication-links {
+    justify-content: center;
+    gap: 10px;
+  }
+  .col-lg-9 {
+    margin-top: 15px; /* Add spacing between title and content on small screens */
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .col-lg-3 {
+    padding-right: 30px; /* Add more space between the title and content */
+  }
+}
