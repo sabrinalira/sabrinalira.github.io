@@ -57,18 +57,3 @@ export const Intro = ({ title, description, image, buttons, socialLinks }) => {
     </div>
   );
 };
-
-export const About = ({ title, description }) => {
-  return (
-    <div id="about" className="bg-white py-5 px-5">
-      <div className="container">
-        <h1 className="text-primary fw-bold">{title}</h1>
-        <div className="">
-          {description.map((value, index) => (
-            <p key={index}>{value}</p>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};

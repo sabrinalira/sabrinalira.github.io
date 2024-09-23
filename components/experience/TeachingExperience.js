@@ -3,7 +3,7 @@ import { FaChalkboardTeacher } from "react-icons/fa";
 
 export const TeachingExperience = ({ title, experiences }) => {
   return (
-    <div id="teachingExperience" className="bg-white py-5">
+    <div id="teachingExperience" className="bg-white py-4 py-md-5">
       <div className="container page-container">
         {/* Title for Small Screens */}
         <div className="row">

@@ -46,7 +46,7 @@ export const Card = ({ title, description, github, timePeriod }) => {
 
 export const Projects = ({ title, cards }) => {
   return (
-    <div id="projects" className="bg-primary py-5">
+    <div id="projects" className="bg-primary py-4 py-md-5">
       <div className="container page-container">
         <div className="row">
           <div className="col-12 d-lg-none text-center mb-4">

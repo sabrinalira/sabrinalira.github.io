@@ -3,7 +3,7 @@ import { FaFilePdf, FaCode, FaDatabase, FaGlobe } from "react-icons/fa";
 
 export const Publications = ({ title, publications }) => {
   return (
-    <div id="publications" className="bg-white py-5">
+    <div id="publications" className="bg-white py-4 py-md-5">
       <div className="container page-container">
         <div className="row justify-content-center">
           {/* Title for Small Screens */}

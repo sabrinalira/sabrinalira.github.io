@@ -3,7 +3,7 @@ import { FaBriefcase } from "react-icons/fa";
 
 export const IndustryExperience = ({ title, companies }) => {
   return (
-    <div id="industryExperience" className="bg-white py-5">
+    <div id="industryExperience" className="bg-white py-4 py-md-5">
       <div className="container page-container">
         {/* Title for Small Screens */}
         <div className="row">

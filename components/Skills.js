@@ -41,7 +41,7 @@ const CppIcon = () => (
 
 export const Skills = () => {
   return (
-    <div id="skills" className="bg-secondary py-5">
+    <div id="skills" className="bg-secondary py-4 py-md-5">
       <div className="container page-container">
         <div className="row">
           <div className="col-12 d-lg-none text-center mb-4">

@@ -3,7 +3,7 @@ import { FaGraduationCap } from "react-icons/fa";
 
 export const Education = ({ title, schools }) => {
   return (
-    <div id="education" className="bg-secondary py-5">
+    <div id="education" className="bg-secondary  py-4 py-md-5">
       <div className="container page-container">
         {/* Title Section for small screens */}
         <div className="row">

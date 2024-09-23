@@ -5,7 +5,7 @@ import { FaEnvelope, FaLinkedin } from "react-icons/fa"; // Import the email ico
 
 export const Contact = ({ title, description, buttons }) => {
   return (
-    <div id="contact" className="bg-white py-5 px-5">
+    <div id="contact" className="bg-white py-4 py-md-5 px-5">
       <div className="container page-container">
         <div className="row">
           <div className="col-md-3 d-flex align-items-start">
