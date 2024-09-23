@@ -204,7 +204,6 @@ export const researchExperience = {
   ],
 };
 
-<<<<<<< HEAD
 export const teachingExperience = {
   title: "Teaching Experience",
   experiences: [
@@ -229,8 +228,6 @@ export const teachingExperience = {
   ],
 };
 
-=======
->>>>>>> 2be6a12ce0eb0437acf24e7914d6e597062fd355
 export const publicationData = {
   title: "Publications",
   publications: [
@@ -282,7 +279,6 @@ export const projectData = {
     },
   ],
 };
-<<<<<<< HEAD
 
 export const skillsData = {
   title: "Skills",
@@ -297,5 +293,3 @@ export const skillsData = {
   skillsLevel3: ["React", "Node.js", "Express", "Nest.js", "Next.js"],
   skillsLevel4: ["PostgreSQL", "Redis", "Docker", "Git", "Linux"],
 };
-=======
->>>>>>> 2be6a12ce0eb0437acf24e7914d6e597062fd355
