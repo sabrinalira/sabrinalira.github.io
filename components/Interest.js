@@ -1,5 +1,4 @@
 import React from "react";
-import { FaBrain, FaTools, FaRobot, FaLaptopCode } from "react-icons/fa";
 
 export const Interest = ({ interest }) => {
   return (
@@ -10,48 +9,33 @@ export const Interest = ({ interest }) => {
       >
         Interest
       </h1>
-      <ul
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "center",
-          padding: 0,
-          listStyleType: "none",
-        }}
-        className="justify-content-md-start"
-      >
-        {interest.map((name, index) => (
-          <li
-            key={index}
+      <div>
+        <div className="row justify-content-center justify-content-md-start col-lg-10">
+          <ul
+            className="text-center text-md-start"
             style={{
-              minWidth: "220px",
               display: "flex",
-              alignItems: "center",
-              whiteSpace: "nowrap",
-              flexGrow: 1,
-              flexBasis: "auto",
+              flexWrap: "wrap",
+              justifyContent: "center",
+              paddingLeft: "10px",
             }}
-            className="justify-content-center justify-content-md-start"
           >
-            {index === 0 && (
-              <FaLaptopCode
-                className="icon-style"
-                style={{ marginRight: "10px" }}
-              />
-            )}
-            {index === 1 && (
-              <FaTools className="icon-style" style={{ marginRight: "10px" }} />
-            )}
-            {index === 2 && (
-              <FaBrain className="icon-style" style={{ marginRight: "10px" }} />
-            )}
-            {index === 3 && (
-              <FaRobot className="icon-style" style={{ marginRight: "10px" }} />
-            )}
-            {name}
-          </li>
-        ))}
-      </ul>
+            {interest.map((name, index) => (
+              <li
+                key={index}
+                className="col-12 col-md-6"
+                style={{
+                  listStyleType: "disc",
+                  paddingLeft: "5px",
+                  listStylePosition: "inside",
+                }}
+              >
+                {name}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };

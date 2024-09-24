@@ -1,3 +1,4 @@
+import { icon } from "@fortawesome/fontawesome-svg-core";
 import profile from "./profile-white.png";
 import {} from "@fortawesome/free-solid-svg-icons";
 
@@ -70,6 +71,10 @@ export const intro = {
       url: "https://scholar.google.com/citations?user=userid",
       icon: "googleScholar",
     },
+    {
+      url: "mailto:rakibulhasanranak1@gmail.com",
+      icon: "email",
+    },
   ],
 };
 
@@ -119,9 +124,11 @@ export const SEO = {
 
 export const interest = [
   "Software Engineering",
-  "Software tools and AI",
   "Artificial Intelligence",
-  "Machine learning",
+  "Machine Learning",
+  "Natural Language and Processing",
+  "Data Sciences and Analytics",
+  "Human Computer Interaction",
 ];
 
 export const education = {
@@ -131,7 +138,7 @@ export const education = {
       degree: "BSc. in Software Engineering, 2022",
       institution: "Shahjalal University of Science and Technology, Sylhet",
       institutionUrl: "https://www.sust.edu/",
-      gpa: "3.79/4.00",
+      gpa: "3.79/4.00 - [4th/50]",
       courses: [
         "Data Structure & Algorithms",
         "Object Oriented Programming",

@@ -1,7 +1,7 @@
 import React from "react";
 import getConfig from "next/config";
 import Link from "next/link";
-import { FaGithub, FaLinkedin } from "react-icons/fa"; // Import icons from react-icons
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"; // Import icons from react-icons
 import { FaGoogleScholar } from "react-icons/fa6";
 
 const { publicRuntimeConfig } = getConfig();
@@ -25,7 +25,7 @@ export const Intro = ({ title, description, image, buttons, socialLinks }) => {
             <h1 className="text-primary fw-bold display-3 mt-4 intro-name">
               {title}
             </h1>
-            <h2 className="text-muted" style={{ fontSize: "1.5rem" }}>
+            <h2 className="text-muted" style={{ fontSize: "1.4rem" }}>
               Software Engineer
             </h2>{" "}
           </div>
@@ -39,7 +39,7 @@ export const Intro = ({ title, description, image, buttons, socialLinks }) => {
           <div className="col-12">
             {socialLinks.map((link, index) => (
               <Link key={index} href={link.url}>
-                <a target="_blank" rel="noreferrer" className="mx-3">
+                <a target="_blank" rel="noreferrer" className="mx-2 mx-md-3">
                   {link.icon === "github" && (
                     <FaGithub className="responsive-icon" />
                   )}
@@ -48,6 +48,10 @@ export const Intro = ({ title, description, image, buttons, socialLinks }) => {
                   )}
                   {link.icon === "googleScholar" && (
                     <FaGoogleScholar className="responsive-icon" />
+                  )}
+                  {/* email */}
+                  {link.icon === "email" && (
+                    <FaEnvelope className="responsive-icon" />
                   )}
                 </a>
               </Link>
