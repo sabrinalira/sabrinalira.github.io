@@ -30,7 +30,7 @@ export const Biography = ({ title, content }) => {
         <div className="text-center text-md-start">
           {" "}
           <a
-            href="/path/to/your/cv.pdf"
+            href="./mr-hasan-cv.pdf"
             className="mt-3 mb-4 btn btn-primary my-1  btn-sm"
             download
             style={{ display: "inline-flex", alignItems: "center" }}
