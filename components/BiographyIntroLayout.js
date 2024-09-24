@@ -5,7 +5,7 @@ import { Biography } from "../components/Biography";
 export const BiographyIntroLayout = ({ introData, biographyData }) => {
   return (
     <div className="bg-white py-3 py-md-5">
-      <div className="container page-container">
+      <div className="intro-container">
         <div className="row">
           <div className="col-md-5">
             <Intro

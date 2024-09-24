@@ -189,6 +189,19 @@ a {
   margin-left: 60px;
 }
 
+.intro-container {
+  padding-left: 50px; 
+  padding-right: 50px; 
+}
+
+
+@media (max-width: 500px) {
+  .intro-container {
+    padding-left: 25px; /* Even less padding on very small screens */
+    padding-right: 25px; /* Even less padding on very small screens */
+  }
+}
+
 .page-container {
   padding-left: 85px; /* Default padding for larger screens */
   padding-right: 85px; /* Default padding for larger screens */

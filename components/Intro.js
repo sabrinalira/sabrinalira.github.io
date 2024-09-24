@@ -9,7 +9,7 @@ const { publicRuntimeConfig } = getConfig();
 export const Intro = ({ title, description, image, buttons, socialLinks }) => {
   return (
     <div className="bg-white">
-      <div className="container">
+      <div className="">
         <div className="row justify-content-center text-center">
           <div className="col-12">
             <img
