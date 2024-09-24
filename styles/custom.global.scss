@@ -351,9 +351,21 @@ html {
   font-size: 25px; /* Small screen size */
 }
 
-/* For larger screens */
+
 @media (min-width: 768px) {
   .responsive-icon {
     font-size: 30px; /* Larger screen size */
   }
+}
+.test{
+  counter-reset: section;
+}
+
+.company-link {
+  text-decoration: none; 
+  color: black !important; 
+}
+.company-link:hover {
+  text-decoration: underline !important; 
+
 }

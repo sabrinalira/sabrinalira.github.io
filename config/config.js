@@ -129,8 +129,9 @@ export const education = {
   schools: [
     {
       degree: "BSc. in Software Engineering, 2022",
-      institution: "Shahjalal University of Science and Technology",
-      gpa: "3.75/4.00",
+      institution: "Shahjalal University of Science and Technology, Sylhet",
+      institutionUrl: "https://www.sust.edu/",
+      gpa: "3.79/4.00",
       courses: [
         "Data Structures",
         "Algorithms",
@@ -147,7 +148,8 @@ export const education = {
     },
     {
       degree: "Higher Secondary School Certificate, 2017",
-      institution: "Notre Dame College",
+      institution: "Notre Dame College, Dhaka",
+      institutionUrl: "https://ndc.edu.bd/",
       gpa: "5.00/5.00",
       courses: [],
     },
@@ -160,6 +162,7 @@ export const industryExperience = {
     {
       position: "Software Engineer",
       company: "Cefalo Bangladesh Ltd",
+      companyUrl: "https://www.cefalo.com/",
       description: [
         "Contributed to the development of a large-scale multi-tenant SaaS platform, focusing on scalable subscription management systems and system reliability.",
         "Led the implementation of daily statistics tracking for recurring revenue, churn rates, and product usage, enabling data-driven strategies and actionable insights through user behavior analysis.",
@@ -167,10 +170,12 @@ export const industryExperience = {
         "Developed communication activity logging for users, enhancing auditability and reducing customer service inquiries",
       ],
       date: "July 2024 - Present",
+      location: "Dhaka, Bangladesh",
     },
     {
       position: "Associate Software Engineer",
       company: "Cefalo Bangladesh Ltd",
+      companyUrl: "https://www.cefalo.com/",
       description: [
         "Designed and implemented comprehensive APIs and conducted extensive unit testing, ensuring robustness and reliability of the application.",
         "Integrated payment gateways and implemented automated recurring billing, reducing customer churn by 30%.",
@@ -180,16 +185,19 @@ export const industryExperience = {
         "Enhanced system usability through global search across entities, improving query performance.",
       ],
       date: "Feb 2023 - Jun 2024",
+      location: "Dhaka, Bangladesh",
     },
     {
       position: "Software Engineer Intern",
       company: "Cefalo Bangladesh Ltd",
+      companyUrl: "https://www.cefalo.com/",
       description: [
         "Developed a Slack bot application for real-time weather data retrieval and command execution.",
         "Automated media sharing and announcements between Slack and Facebook using Slack bot.",
         "Designed and deployed a blogging platform with unit testing and containerization.",
       ],
       date: "Sept 2021 - Mar 2022",
+      location: "Dhaka, Bangladesh",
     },
   ],
 };
@@ -200,6 +208,7 @@ export const researchExperience = {
     {
       position: "Research Assistant",
       company: "Bengali.AI",
+      companyUrl: "https://bengali.ai/",
       description: [
         "Led a team of 13 annotators to develop the largest multi-domain Bengali Document Layout Analysis Dataset (BaDLAD), consisting of 33.7K document images and 710K polygon annotations.",
         "Standardized exported annotation data, performed comprehensive data analysis and visualization, and processed content to ensure compatibility with machine learning models while supporting dataset validation.",

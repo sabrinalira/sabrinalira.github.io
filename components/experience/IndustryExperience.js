@@ -5,7 +5,6 @@ export const IndustryExperience = ({ title, companies }) => {
   return (
     <div id="industryExperience" className="bg-white py-4 py-md-5">
       <div className="container page-container">
-        {/* Title for Small Screens */}
         <div className="row">
           <div className="col-12 d-lg-none text-center mb-4">
             <h1 className="text-primary fw-bold">{title}</h1>
@@ -13,12 +12,10 @@ export const IndustryExperience = ({ title, companies }) => {
         </div>
 
         <div className="row">
-          {/* Title for Large Screens */}
           <div className="col-lg-3 d-none d-lg-flex align-items-start">
             <h1 className="text-primary fw-bold">{title}</h1>
           </div>
 
-          {/* Timeline for Large Screens */}
           <div className="col-lg-9 d-none d-lg-block">
             <div className="timeline">
               {companies.map((job, index) => (
@@ -51,9 +48,20 @@ export const IndustryExperience = ({ title, companies }) => {
                     style={{ paddingLeft: "20px" }}
                   >
                     <h3 className="text-primary">{job.position}</h3>
-                    <p style={{ marginBottom: "4px" }}>{job.company}</p>
+                    <p style={{ marginBottom: "4px" }}>
+                      <a
+                        href={job.companyUrl}
+                        className="company-link"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {job.company}
+                      </a>
+                    </p>
                     <p style={{ marginTop: "0", marginBottom: "10px" }}>
                       {job.date}
+                      <span>&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;</span>
+                      {job.location}
                     </p>
 
                     <ul>
@@ -72,9 +80,20 @@ export const IndustryExperience = ({ title, companies }) => {
             {companies.map((job, index) => (
               <div key={index} className="shadow p-3 mb-4 bg-white rounded">
                 <h3 className="text-primary">{job.position}</h3>
-                <p style={{ marginBottom: "4px" }}>{job.company}</p>
+                <p style={{ marginBottom: "4px" }}>
+                  <a
+                    href={job.companyUrl}
+                    className="company-link"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {job.company}
+                  </a>
+                </p>
                 <p style={{ marginTop: "0", marginBottom: "10px" }}>
                   {job.date}
+                  <span>&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;</span>
+                  {job.location}
                 </p>
 
                 <ul>

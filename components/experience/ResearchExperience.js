@@ -49,7 +49,17 @@ export const ResearchExperience = ({ title, companies }) => {
                     style={{ paddingLeft: "20px" }}
                   >
                     <h3 className="text-primary">{job.position}</h3>
-                    <p style={{ marginBottom: "4px" }}>{job.company}</p>
+                    <p style={{ marginBottom: "4px" }}>
+                      {" "}
+                      <a
+                        href={job.companyUrl}
+                        className="company-link"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {job.company}
+                      </a>
+                    </p>
                     <p style={{ marginTop: "0", marginBottom: "10px" }}>
                       {job.date}
                     </p>
@@ -69,7 +79,17 @@ export const ResearchExperience = ({ title, companies }) => {
             {companies.map((job, index) => (
               <div key={index} className="shadow p-3 mb-4 bg-white rounded">
                 <h3 className="text-primary">{job.position}</h3>
-                <p style={{ marginBottom: "4px" }}>{job.company}</p>
+                <p style={{ marginBottom: "4px" }}>
+                  {" "}
+                  <a
+                    href={job.companyUrl}
+                    className="company-link"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {job.company}
+                  </a>
+                </p>
                 <p style={{ marginTop: "0", marginBottom: "10px" }}>
                   {job.date}
                 </p>

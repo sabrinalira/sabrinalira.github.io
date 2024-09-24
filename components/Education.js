@@ -48,7 +48,17 @@ export const Education = ({ title, schools }) => {
                     style={{ paddingLeft: "20px" }}
                   >
                     <h3 className="text-primary">{school.degree}</h3>
-                    <p style={{ marginBottom: "4px" }}>{school.institution}</p>
+                    <p style={{ marginBottom: "4px" }}>
+                      {" "}
+                      <a
+                        href={school.institutionUrl}
+                        className="company-link"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {school.institution}{" "}
+                      </a>
+                    </p>
                     <p style={{ marginBottom: "4px" }}>GPA: {school.gpa}</p>
 
                     {school.courses.length > 0 && (
@@ -77,7 +87,17 @@ export const Education = ({ title, schools }) => {
             {schools.map((school, index) => (
               <div key={index} className="shadow p-3 mb-4 bg-white rounded">
                 <h3 className="text-primary">{school.degree}</h3>
-                <p style={{ marginBottom: "4px" }}>{school.institution}</p>
+                <p style={{ marginBottom: "4px" }}>
+                  {" "}
+                  <a
+                    href={school.institutionUrl}
+                    className="company-link"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {school.institution}
+                  </a>
+                </p>
                 <p style={{ marginBottom: "4px" }}>GPA: {school.gpa}</p>
 
                 {school.courses.length > 0 && (
