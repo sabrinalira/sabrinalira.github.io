@@ -15,15 +15,13 @@ export const Nav = ({ title, links }) => {
     setActiveDropdown(null);
   };
 
-  // This function will collapse the navbar after a link is clicked.
   const handleLinkClick = () => {
     setIsNavCollapsed(true);
-    setActiveDropdown(null); // Close the dropdown after an option is selected
+    setActiveDropdown(null);
   };
 
-  // This function ensures the dropdown resets when clicked again on medium screens
   const handleDropdownClick = (index) => {
-    setActiveDropdown(activeDropdown === index ? null : index); // Toggle dropdown on click
+    setActiveDropdown(activeDropdown === index ? null : index);
   };
 
   return (
@@ -62,7 +60,7 @@ export const Nav = ({ title, links }) => {
                   }`}
                   onMouseEnter={() => handleDropdownEnter(index)}
                   onMouseLeave={handleDropdownLeave}
-                  onClick={() => handleDropdownClick(index)} // Handle click to toggle dropdown on medium screens
+                  onClick={() => handleDropdownClick(index)}
                 >
                   <a
                     className="nav-link dropdown-toggle"
@@ -82,10 +80,7 @@ export const Nav = ({ title, links }) => {
                   >
                     {value.options.map((option, subIndex) => (
                       <Link key={subIndex} href={option.link}>
-                        <a
-                          className="dropdown-item"
-                          onClick={handleLinkClick} // Collapse the dropdown on selection
-                        >
+                        <a className="dropdown-item" onClick={handleLinkClick}>
                           {option.title}
                         </a>
                       </Link>

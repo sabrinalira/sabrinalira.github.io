@@ -4,9 +4,8 @@ import { FaBrain, FaTools, FaRobot, FaLaptopCode } from "react-icons/fa";
 export const Interest = ({ interest }) => {
   return (
     <div id="interest" className="bg-white">
-      {/* Centering the title on small screens, left-aligned on medium and larger */}
       <h1
-        className="text-primary fw-bold py-2 text-center text-md-left"
+        className="text-primary fw-bold py-2 text-center text-md-start"
         style={{ fontSize: "28px" }}
       >
         Interest
@@ -14,27 +13,25 @@ export const Interest = ({ interest }) => {
       <ul
         style={{
           display: "flex",
-          flexWrap: "wrap", // Allow wrapping to handle multiple rows
-          justifyContent: "center", // Center items in the row
-          gap: "20px", // Add spacing between items
+          flexWrap: "wrap",
+          justifyContent: "center",
           padding: 0,
-          listStyleType: "none", // Remove bullet points
+          listStyleType: "none",
         }}
+        className="justify-content-md-start"
       >
         {interest.map((name, index) => (
           <li
             key={index}
             style={{
+              minWidth: "220px",
               display: "flex",
               alignItems: "center",
-              justifyContent: "center", // Center each item
-              whiteSpace: "nowrap", // Prevents the text from wrapping
-              overflow: "hidden", // Ensures long text is clipped
-              textOverflow: "ellipsis", // Adds ellipsis for overflowing text
-              // padding: "10px", // Add some padding to space out the text and icons
-              flex: "1 0 180px", // Flex items to take a minimum of 180px and grow equally
-              maxWidth: "250px", // Set a maximum width for large screens
+              whiteSpace: "nowrap",
+              flexGrow: 1,
+              flexBasis: "auto",
             }}
+            className="justify-content-center justify-content-md-start"
           >
             {index === 0 && (
               <FaLaptopCode

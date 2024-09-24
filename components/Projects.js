@@ -32,10 +32,10 @@ export const Card = ({ title, description, github, timePeriod }) => {
               textDecoration: "none",
               display: "flex",
               alignItems: "center",
-              fontSize: "0.9rem",
+              fontSize: "0.8rem",
             }}
           >
-            <FaGithub style={{ fontSize: "1.2em", marginRight: "5px" }} />
+            <FaGithub style={{ fontSize: "1.4em", marginRight: "5px" }} />
             <span>GitHub</span>
           </a>
         )}

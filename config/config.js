@@ -5,7 +5,7 @@ export const navigation = {
   name: "MR Hasan",
   links: [
     {
-      title: "Experience",
+      title: "Experiences",
       options: [
         {
           title: "Industry",
@@ -22,16 +22,24 @@ export const navigation = {
       ],
     },
     {
-      title: "Education",
-      link: "#education",
+      title: "Educations",
+      link: "#educations",
+    },
+    {
+      title: "Publications",
+      link: "#publications",
+    },
+    {
+      title: "Skills",
+      link: "#skills",
     },
     {
       title: "Projects",
       link: "#projects",
     },
     {
-      title: "Contact",
-      link: "#contact",
+      title: "Contacts",
+      link: "#contacts",
     },
   ],
 };

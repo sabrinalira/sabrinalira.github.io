@@ -6,17 +6,14 @@ export const Publications = ({ title, publications }) => {
     <div id="publications" className="bg-white py-4 py-md-5">
       <div className="container page-container">
         <div className="row justify-content-center">
-          {/* Title for Small Screens */}
           <div className="col-12 d-lg-none text-center mb-4">
             <h1 className="text-primary fw-bold">{title}</h1>
           </div>
 
-          {/* Title for Large Screens */}
           <div className="col-lg-3 d-none d-lg-flex align-items-start mb-3">
             <h1 className="text-primary fw-bold">{title}</h1>
           </div>
 
-          {/* Publications List */}
           <div className="col-lg-9 col-12">
             <ul style={{ listStyleType: "none", paddingLeft: "0" }}>
               {publications.map((pub, index) => (

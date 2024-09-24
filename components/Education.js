@@ -3,9 +3,8 @@ import { FaGraduationCap } from "react-icons/fa";
 
 export const Education = ({ title, schools }) => {
   return (
-    <div id="education" className="bg-secondary  py-4 py-md-5">
+    <div id="educations" className="bg-secondary  py-4 py-md-5">
       <div className="container page-container">
-        {/* Title Section for small screens */}
         <div className="row">
           <div className="col-12 d-lg-none text-center mb-4">
             <h1 className="text-primary fw-bold">{title}</h1>
@@ -13,12 +12,10 @@ export const Education = ({ title, schools }) => {
         </div>
 
         <div className="row">
-          {/* Title for large screens (col-lg) */}
           <div className="col-lg-3 d-none d-lg-flex align-items-start">
             <h1 className="text-primary fw-bold">{title}</h1>
           </div>
 
-          {/* Timeline for large screens (col-lg) */}
           <div className="col-lg-9 d-none d-lg-block">
             <div className="timeline">
               {schools.map((school, index) => (
@@ -76,7 +73,6 @@ export const Education = ({ title, schools }) => {
             </div>
           </div>
 
-          {/* Shadow Box for Small Screens */}
           <div className="col-12 d-lg-none">
             {schools.map((school, index) => (
               <div key={index} className="shadow p-3 mb-4 bg-white rounded">

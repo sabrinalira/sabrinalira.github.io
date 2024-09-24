@@ -4,7 +4,6 @@ export const ResearchExperience = ({ title, companies }) => {
   return (
     <div id="researchExperience" className="bg-secondary py-4 py-md-5">
       <div className="container page-container">
-        {/* Title for Small Screens */}
         <div className="row">
           <div className="col-12 d-lg-none text-center mb-4">
             <h1 className="text-primary fw-bold">{title}</h1>
@@ -12,12 +11,10 @@ export const ResearchExperience = ({ title, companies }) => {
         </div>
 
         <div className="row">
-          {/* Title for Large Screens */}
           <div className="col-lg-3 d-none d-lg-flex align-items-start">
             <h1 className="text-primary fw-bold">{title}</h1>
           </div>
 
-          {/* Timeline for Large Screens */}
           <div className="col-lg-9 d-none d-lg-block">
             <div className="timeline">
               {companies.map((job, index) => (
@@ -66,7 +63,6 @@ export const ResearchExperience = ({ title, companies }) => {
             </div>
           </div>
 
-          {/* Shadow Box for Small Screens */}
           <div className="col-12 d-lg-none">
             {companies.map((job, index) => (
               <div key={index} className="shadow p-3 mb-4 bg-white rounded">

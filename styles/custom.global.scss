@@ -247,20 +247,15 @@ ul {
 }
 
 html {
-  scroll-padding-top: 55px; /* Adjust this value based on your navbar height */
+  scroll-padding-top: 55px; 
 }
 
-// .skills-grid {
-//   display: grid;
-//   grid-template-columns: repeat(4, 1fr); /* 4 columns */
-//   gap: 10px; /* Space between items */
-// }
+
 
 .skills-list {
   list-style-type: none;
   padding-left: 0;
   margin: 0;
-  // display: contents; /* So it uses grid space correctly */
 }
 
 .skill-item {
@@ -308,12 +303,12 @@ html {
     gap: 10px;
   }
   .col-lg-9 {
-    margin-top: 15px; /* Add spacing between title and content on small screens */
+    margin-top: 15px;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .col-lg-3 {
-    padding-right: 30px; /* Add more space between the title and content */
+    padding-right: 30px; 
   }
 }
 
@@ -326,5 +321,26 @@ html {
   .navbar-title-custom {
     margin-left: 10%;
     margin-right: 35%;
+  }
+}
+
+.intro-name{
+  font-size: 2.7rem;
+}
+
+@media (max-width: 576px) {
+  .intro-name{
+    font-size: 2.3rem;
+  }
+}
+
+.responsive-icon {
+  font-size: 25px; /* Small screen size */
+}
+
+/* For larger screens */
+@media (min-width: 768px) {
+  .responsive-icon {
+    font-size: 30px; /* Larger screen size */
   }
 }

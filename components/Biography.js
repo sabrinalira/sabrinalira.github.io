@@ -7,9 +7,8 @@ export const Biography = ({ title, content }) => {
   return (
     <div className="mt-5 mt-md-0">
       <div className="biography-section">
-        {/* Centering the title on small screens, left-aligned on medium and larger */}
         <h1
-          className="text-primary fw-bold  text-md-left text-center mb-4"
+          className="text-primary fw-bold text-md-start text-center mb-4"
           style={{ fontSize: "28px" }}
         >
           {title}
@@ -27,10 +26,11 @@ export const Biography = ({ title, content }) => {
           </p>
         ))}
       </div>
-      <div className="text-center">
+      <div className="text-center text-md-start">
+        {" "}
         <a
           href="/path/to/your/cv.pdf"
-          className="mt-3 mb-4 btn btn-primary my-1"
+          className="mt-3 mb-4 btn btn-primary my-1  btn-sm"
           download
           style={{ display: "inline-flex", alignItems: "center" }}
         >

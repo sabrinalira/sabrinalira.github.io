@@ -22,10 +22,7 @@ export const Intro = ({ title, description, image, buttons, socialLinks }) => {
           </div>
 
           <div className="col-12">
-            <h1
-              className="text-primary fw-bold display-3 mt-4"
-              style={{ fontSize: "3rem" }}
-            >
+            <h1 className="text-primary fw-bold display-3 mt-4 intro-name">
               {title}
             </h1>
             <h2 className="text-muted" style={{ fontSize: "1.5rem" }}>
@@ -43,10 +40,14 @@ export const Intro = ({ title, description, image, buttons, socialLinks }) => {
             {socialLinks.map((link, index) => (
               <Link key={index} href={link.url}>
                 <a target="_blank" rel="noreferrer" className="mx-3">
-                  {link.icon === "github" && <FaGithub size={30} />}
-                  {link.icon === "linkedin" && <FaLinkedin size={30} />}
+                  {link.icon === "github" && (
+                    <FaGithub className="responsive-icon" />
+                  )}
+                  {link.icon === "linkedin" && (
+                    <FaLinkedin className="responsive-icon" />
+                  )}
                   {link.icon === "googleScholar" && (
-                    <FaGoogleScholar size={30} />
+                    <FaGoogleScholar className="responsive-icon" />
                   )}
                 </a>
               </Link>
