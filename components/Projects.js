@@ -6,7 +6,6 @@ export const Card = ({ title, description, github, timePeriod }) => {
     <div
       className="card p-3 d-flex flex-column justify-content-between"
       style={{
-        backgroundColor: "#f8f9fa",
         borderRadius: "8px",
         boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
         minHeight: "200px",
@@ -21,7 +20,7 @@ export const Card = ({ title, description, github, timePeriod }) => {
         </div>
         <p className="text-dark">{description}</p>
       </div>
-      <div className="d-flex justify-content-start mt-3">
+      <div className="d-flex justify-content-start">
         {github && (
           <a
             href={github}

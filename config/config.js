@@ -257,32 +257,32 @@ export const projectData = {
   title: "Projects",
   cards: [
     {
-      title: "FileHub",
+      title: "SlackBook",
       description:
-        "A file-sharing application using Python and Tkinter that allows users to transfer files over a TCP network.",
-      github: "https://github.com/username/filehub",
-      timePeriod: "June 2020 - Present",
-    },
-    {
-      title: "SWE Society Portal",
-      description:
-        "A portal for the Software Engineering Society, built with ExpressJs and ReactJs to manage events, profiles, and notices.",
-      github: "https://github.com/username/swe-society-portal",
-      timePeriod: "May 2018 - May 2020",
+        "A Slack bot application to automate media sharing and announcements between Slack and Facebook. It also provides real-time weather data retrieval and command execution.",
+      github: "https://github.com/RakibulRanak/SlackBook",
+      timePeriod: "Dec 2021 - Feb 2022",
     },
     {
       title: "FileHub",
       description:
-        "A file-sharing application using Python and Tkinter that allows users to transfer files over a TCP network.",
-      github: "https://github.com/username/filehub",
-      timePeriod: "June 2020 - Present",
+        "A file-sharing application that allows users to transfer files over a TCP network. It supports multiple connections between clients and servers concurrently.",
+      github: "https://github.com/RakibulRanak/FileHub",
+      timePeriod: "May 2021 - June 2021",
     },
     {
       title: "SWE Society Portal",
       description:
-        "A portal for the Software Engineering Society, built with ExpressJs and ReactJs to manage events, profiles, and notices.",
-      github: "https://github.com/username/swe-society-portal",
-      timePeriod: "May 2018 - May 2020",
+        "A portal for the Software Engineering Society,SUST to manage events, profiles, and notices. It includes an admin panel for managing user roles and permissions.",
+      github: "https://github.com/sust-swe/SWE-Society",
+      timePeriod: "Jan 2021 - Feb 2021",
+    },
+    {
+      title: "SWEOJ",
+      description:
+        "A basic online judge web application to arrange programming contests and practice problems. It has live standings, user submissions and a problem archive.",
+      github: "https://github.com/RakibulRanak/SWE-OJ",
+      timePeriod: "July 2019 - Jan 2020",
     },
   ],
 };

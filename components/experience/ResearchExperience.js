@@ -1,5 +1,7 @@
 import React from "react";
 import { FaBriefcase } from "react-icons/fa";
+import { GiArchiveResearch } from "react-icons/gi";
+
 export const ResearchExperience = ({ title, companies }) => {
   return (
     <div id="researchExperience" className="bg-secondary py-4 py-md-5">
@@ -28,7 +30,7 @@ export const ResearchExperience = ({ title, companies }) => {
                     style={{ width: "40px", position: "relative" }}
                   >
                     <div className="timeline-icon">
-                      <FaBriefcase className="text-success" size={24} />
+                      <GiArchiveResearch className="text-success" size={24} />
                     </div>
 
                     {index !== companies.length - 1 && (
