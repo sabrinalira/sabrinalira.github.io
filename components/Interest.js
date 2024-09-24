@@ -1,13 +1,13 @@
 import React from "react";
 
-export const Interest = ({ interest }) => {
+export const Interest = ({ title, interests }) => {
   return (
     <div id="interest" className="bg-white">
       <h1
         className="text-primary fw-bold py-2 text-center text-md-start"
         style={{ fontSize: "28px" }}
       >
-        Interest
+        {title}
       </h1>
       <div>
         <div className="row justify-content-center justify-content-md-start col-lg-10">
@@ -20,7 +20,7 @@ export const Interest = ({ interest }) => {
               paddingLeft: "10px",
             }}
           >
-            {interest.map((name, index) => (
+            {interests.map((name, index) => (
               <li
                 key={index}
                 className="col-12 col-md-6"

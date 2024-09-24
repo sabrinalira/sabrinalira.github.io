@@ -12,6 +12,7 @@ import {
   researchExperience,
   publicationData,
   teachingExperience,
+  interest,
 } from "../config/config";
 import { Education } from "../components/Education";
 import { BiographyIntroLayout } from "../components/BiographyIntroLayout";
@@ -21,7 +22,11 @@ import { Publications } from "../components/Publications";
 export default function Home() {
   return (
     <Fragment>
-      <BiographyIntroLayout introData={intro} biographyData={biographyData} />
+      <BiographyIntroLayout
+        introData={intro}
+        biographyData={biographyData}
+        interest={interest}
+      />
 
       <Education title={education.title} schools={education.schools} />
 

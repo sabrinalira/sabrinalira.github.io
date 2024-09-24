@@ -40,7 +40,7 @@ export const Biography = ({ title, content }) => {
         </div>
         <div className="row">
           <div className="col-12">
-            <Interest interest={interest} />
+            <Interest title={interest.title} interests={interest.interests} />
           </div>
         </div>
       </div>

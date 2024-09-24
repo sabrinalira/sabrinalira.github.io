@@ -106,14 +106,17 @@ export const SEO = {
   image: profile.src,
 };
 
-export const interest = [
-  "Software Engineering",
-  "Artificial Intelligence",
-  "Machine Learning",
-  "Natural Language and Processing",
-  "Data Sciences and Analytics",
-  "Human Computer Interaction",
-];
+export const interest = {
+  title: "Interests",
+  interests: [
+    "Software Engineering",
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Natural Language and Processing",
+    "Data Sciences and Analytics",
+    "Human Computer Interaction",
+  ],
+};
 
 export const education = {
   title: "Education",

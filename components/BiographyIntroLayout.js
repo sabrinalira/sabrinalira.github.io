@@ -2,7 +2,11 @@ import React from "react";
 import { Intro } from "../components/Intro";
 import { Biography } from "../components/Biography";
 
-export const BiographyIntroLayout = ({ introData, biographyData }) => {
+export const BiographyIntroLayout = ({
+  introData,
+  biographyData,
+  interest,
+}) => {
   return (
     <div className="bg-white py-3 py-md-5">
       <div className="intro-container">
@@ -20,6 +24,7 @@ export const BiographyIntroLayout = ({ introData, biographyData }) => {
             <Biography
               title={biographyData.title}
               content={biographyData.content}
+              interest={interest}
             />
           </div>
         </div>
