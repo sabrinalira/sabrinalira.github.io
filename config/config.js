@@ -6,7 +6,6 @@ export const navigation = {
   links: [
     {
       title: "Experience",
-      link: "#experience",
       options: [
         {
           title: "Industry",

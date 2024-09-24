@@ -316,3 +316,15 @@ html {
     padding-right: 30px; /* Add more space between the title and content */
   }
 }
+
+.navbar-toggler{
+  color: white !important;
+}
+
+
+@media (max-width: 576px) {
+  .navbar-title-custom {
+    margin-left: 10%;
+    margin-right: 35%;
+  }
+}
