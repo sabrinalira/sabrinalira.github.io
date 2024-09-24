@@ -18,9 +18,9 @@ export const Biography = ({ title, content }) => {
             <p
               key={index}
               style={{
-                fontSize: "16px",
+                // fontSize: "16px",
                 lineHeight: "1.5",
-                textAlign: "justify",
+                // textAlign: "justify",
               }}
             >
               {paragraph}
