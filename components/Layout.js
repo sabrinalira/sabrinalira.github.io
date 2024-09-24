@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
     <div>
       <Header seo={SEO} />
       <Nav title={navigation.name} links={navigation.links} />
-      <main className="mt-5">{children}</main> <Footer />
+      <main className="mt-5 mt-md-10">{children}</main> <Footer />
     </div>
   );
 };
