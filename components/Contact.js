@@ -26,7 +26,11 @@ export const Contact = ({ title, description, buttons }) => {
                     </Link>
                   ) : (
                     <Link key={index} href={value.link}>
-                      <a className="btn btn-outline-primary my-1 mx-3 d-flex align-items-center btn-sm">
+                      <a
+                        className="btn btn-outline-primary my-1 mx-3 d-flex align-items-center btn-sm"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <FaLinkedin className="me-2" />
                         {value.title}
                       </a>

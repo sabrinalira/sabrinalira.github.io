@@ -46,29 +46,13 @@ export const navigation = {
 };
 export const intro = {
   title: "Md. Rakibul Hasan",
-  // description: ["I am a passionate software engineer with a degree in Software Engineering from SUST (2022). During my university years, I solved over 1200 problems in 200+ programming contests and worked on game and web development projects.",
-  //   "My experience includes academic research in Computer Vision and Pattern Recognition, with an accepted paper at ICDAR. I enjoy mentoring new developers and participating in tech communities.",
-  //   "In my free time, I love watching movies, playing video games, and reading books."
-  // ],
   description: [],
   image: profile.src,
-  buttons: [
-    {
-      title: "Contact Me",
-      link: "#contact",
-      isPrimary: true,
-    },
-    {
-      title: "Resume",
-      link: "",
-      isPrimary: false,
-    },
-  ],
   socialLinks: [
     { url: "https://github.com/rakibulranak", icon: "github" },
     { url: "https://linkedin.com/in/rakibulranak", icon: "linkedin" },
     {
-      url: "https://scholar.google.com/citations?user=userid",
+      url: "https://scholar.google.com/citations?user=vhS6e-AAAAAJ&hl=en",
       icon: "googleScholar",
     },
     {
@@ -89,9 +73,9 @@ export const about = {
 export const biographyData = {
   title: "About Me",
   content: [
-    "A brief intro about your career, education, or anything you'd like to highlight. A brief intro about your career, education, or anything you'd like to highlight. A brief intro about your career, education, or anything you'd like to highlight.A brief intro about your career, education, or anything you'd like to highlight.",
-    "This could include your background, achievements, or career highlights. A brief intro about your career, education, or anything you'd like to highlight. A brief intro about your career, education, or anything you'd like to highlight.A brief intro about your career, education, or anything you'd like to highlight.",
-    "This could include your background, achievements, or career highlights. A brief intro about your career, education, or anything you'd like to highlight. A brief intro about your career, education, or anything you'd like to highlight.A brief intro about your career, education, or anything you'd like to highlight.",
+    "Md Rakibul Hasan, known as Ranak among peers, is a dedicated Software Engineer at Cefalo Bangladesh Ltd. He contributes to the development and enhancement of a large-scale SaaS platform for a Norwegian Media Company, focusing on subscription management, system reliability, and platform improvements to optimize user experience.",
+    "Hasan holds a Bachelor's degree in Software Engineering from Shahjalal University of Science and Technology (SUST). A seasoned competitor in programming contests, he has participated in over 200 contests and solved more than 1200 problems. He has also published research in Computer Vision at the ICDAR conference, specifically on Bengali Document Layout Analysis.",
+    "With experience mentoring junior engineers and expertise in software development, Hasan continues to excel in his role. When not coding, he enjoys watching movies, sports, and traveling.",
   ],
 };
 
@@ -107,7 +91,7 @@ export const contact = {
     },
     {
       title: "DM Me",
-      link: "https://linkedin.com/in/rakibulranak",
+      link: "https://www.linkedin.com/in/rakibulranak",
       isPrimary: false,
     },
   ],
@@ -227,7 +211,7 @@ export const researchExperience = {
         "Published a dataset paper, leveraging BaDLAD for training deep learning models in Bengali document digitization and layout analysis.",
         "Implemented a Bengali lemmatizer and compiled the largest dataset of Bengali verb forms, categorized bygrammatical structure and tense.",
       ],
-      date: "Mar 2022 - Jan 2023",
+      date: "Oct 2021 - Jan 2023",
     },
   ],
 };
