@@ -31,7 +31,7 @@ export const Biography = ({ title, content }) => {
           {" "}
           <a
             href="./mr-hasan-cv.pdf"
-            className="mt-3 mb-4 btn btn-primary my-1  btn-sm"
+            className="mt-4 mb-4 btn btn-primary my-1  btn-sm"
             download
             style={{ display: "inline-flex", alignItems: "center" }}
           >

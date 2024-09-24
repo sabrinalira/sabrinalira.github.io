@@ -8,7 +8,7 @@ export const BiographyIntroLayout = ({
   interest,
 }) => {
   return (
-    <div className="bg-white py-3 py-md-5 custom-margin">
+    <div className="bg-white py-md-5 custom-margin">
       <div className="intro-container">
         <div className="row">
           <div className="col-md-5">

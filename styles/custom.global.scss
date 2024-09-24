@@ -379,3 +379,10 @@ html {
   margin-top: 10vh !important; /* For medium (≥768px) and up */
   margin-bottom: 10vh !important; /* For medium (≥768px) and up */
 }
+
+@media (max-width: 400px) {
+  .custom-margin {
+    margin-top: 5vh !important; /* For small (<768px) */
+    margin-bottom: 5vh !important; /* For small (<768px) */
+  }
+}
