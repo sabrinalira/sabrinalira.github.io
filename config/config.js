@@ -45,7 +45,7 @@ export const navigation = {
   ],
 };
 export const intro = {
-  title: "Md. Rakibul Hasan",
+  title: "Sabrina Afrin Lira",
   description: [],
   image: profile.src,
   socialLinks: [
