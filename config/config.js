@@ -49,14 +49,11 @@ export const intro = {
   description: [],
   image: profile.src,
   socialLinks: [
-    { url: "https://github.com/rakibulranak", icon: "github" },
-    { url: "https://linkedin.com/in/rakibulranak", icon: "linkedin" },
+    { url: "https://sabrinalira.github.io/", icon: "github" },
+    { url: "https://www.linkedin.com/in/sabrina-afrin-lira/", icon: "linkedin" },
+    
     {
-      url: "https://scholar.google.com/citations?user=vhS6e-AAAAAJ&hl=en",
-      icon: "googleScholar",
-    },
-    {
-      url: "mailto:rakibulhasanranak1@gmail.com",
+      url: "mailto:sabrinaaflira@gamil.com",
       icon: "email",
     },
   ],
